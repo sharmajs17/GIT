@@ -26,6 +26,9 @@ jobs:
       with:
         java-version: '11'
         #distribution: 'temurin'
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
         cache: maven
     - name: Build with Maven
       run: mvn -DdistributionTargetDir="$HOME/app/maven/apache-maven-4.0.x-SNAPSHOT" clean package
+      env:
+        GITHUB_TOKEN: ${{ github.token }} 
