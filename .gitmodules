@@ -4,3 +4,6 @@
 [submodule "liferay-javamelody"]
 	path = liferay-javamelody
 	url = https://github.com/javamelody/liferay-javamelody.git
+[submodule "spring-boot-admin"]
+	path = spring-boot-admin
+	url = https://github.com/codecentric/spring-boot-admin.git
